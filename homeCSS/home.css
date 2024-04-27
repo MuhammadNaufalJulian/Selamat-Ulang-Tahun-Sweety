@@ -1,0 +1,294 @@
+
+/* CSS */
+body {
+    opacity: 0; /* Set opacity to 0 initially */
+    transform: translateY(100vh); /* Translate body down by the height of the viewport */
+    transition: opacity 9s ease-in, transform 1s ease-in; /* Apply transition for opacity and transform */
+}
+
+.loaded {
+    opacity: 1; /* When the page is loaded, set opacity to 1 */
+    transform: translateY(0); /* Bring the body back to its original position */
+}
+
+        .mail {
+            display: grid;
+            justify-content: center;
+            place-content: center;
+            min-height: 100vh;
+            border: solid;
+            background-image: url("EMAIL/assetss/imgBackgground/flowerview.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            animation: heartbeat 10s infinite alternate;
+        }
+
+
+        .say, .say2, .to-mail {
+            border: transparent rgb(163, 163, 163);
+            border-radius: 20px;
+            padding: 10px;
+}
+@keyframes heartbeat {
+            0% {
+                opacity: 1;
+                font-size: 30px;
+            }
+            100% {
+                opacity: 2;
+                font-size: 60;
+            }
+        }
+
+        @keyframes blink {
+            0%, 50%, 75% {
+                color: yellow;
+                font-size: 30px;
+                
+            }
+            25%, 100% {
+                color: black ;
+                font-size:60px;
+            }
+        }
+
+
+        .say {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent;
+            border: transparent;
+        }
+
+        .say:hover {
+            background-color: black;
+            cursor: pointer;
+        }
+
+        .say2:hover {
+            background-color: yellow;
+        }
+
+        .h, .e, .l, .l2, .o, .space, .s, .h2, .o2, .f, .y {
+            padding: 0 5px ;
+            animation: blink 15s infinite; /* Apply blink animation to all letters */
+        }
+
+        /* Delay animation for each letter */
+        .e { animation-delay: 0.5s; }
+        .l { animation-delay: 1s; }
+        .l2 { animation-delay: 1.5s; }
+        .o { animation-delay: 2s; }
+        .s { animation-delay: 2.5s; }
+        .h2 { animation-delay: 3s; }
+        .o2 { animation-delay: 3.5s; }
+        .f { animation-delay: 4s; }
+        .y { animation-delay: 4.5s; }
+
+        .say2 {
+            display: grid;
+            place-content: center;
+            min-height: 4vh;
+        }
+
+        .to-mail {
+            padding: 10px;
+            background-color: rgb(24, 255, 243);
+            border: transparent;
+        }
+
+        .to-mail:hover {
+    background-color: #afafaf; /* Aqua background on hover */
+    color: #000000; /* Change text color on hover */
+    transform: scale(1.1); /* Slightly increase the size on hover */
+    transition: all 0.3s ease-in-out; /* Smooth transition for all changes */
+    cursor: pointer;
+}
+
+
+        .animated-emote {
+            font-size: 20px;
+            display: inline-block;
+        }
+
+        .bounce {
+            animation: bounce 1s infinite;
+        }
+
+        .rotate {
+            animation: rotate 2s infinite linear;
+        }
+
+        .heartbeat {
+            animation: heartbeat 1s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        @media screen and (max-width: 350px) {
+
+            .mail {
+            width: 350px;
+            display: grid;
+            justify-content: center;
+            place-content: center;
+            min-height: 100vh;
+            border: solid;
+            background-image: url("EMAIL/assetss/imgBackgground/flowerview.png");
+            background-size: cover;
+            background-position:center ;
+            background-repeat: no-repeat;
+            animation: heartbeat 10s infinite alternate;
+        }
+
+
+        .say, .say2, .to-mail {
+            border: transparent rgb(163, 163, 163);
+            border-radius: 20px; 
+}
+
+        @keyframes heartbeat {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0.8;
+            }
+        }
+
+        @keyframes blink {
+            0%, 50%, 75% {
+                color: yellow;
+                
+            }
+            25%, 100% {
+                color: black ;
+                font-size: 15px;
+            }
+        }
+
+        .say {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 10px;
+        }
+
+        .say2 {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+
+        .say:hover {
+            background-color: rgba(0, 0, 0, 0.425);
+            cursor: pointer;
+        }
+
+        .say2:hover {
+            background-color: rgba(255, 255, 0, 0.568);
+        }
+
+        .h, .e, .l, .l2, .o, .space, .s, .h2, .o2, .f, .y {
+            padding: 0 5px ;
+            animation: blink 15s infinite; /* Apply blink animation to all letters */
+        }
+
+        /* Delay animation for each letter */
+        .e { animation-delay: 0.5s; }
+        .l { animation-delay: 1s; }
+        .l2 { animation-delay: 1.5s; }
+        .o { animation-delay: 2s; }
+        .s { animation-delay: 2.5s; }
+        .h2 { animation-delay: 3s; }
+        .o2 { animation-delay: 3.5s; }
+        .f { animation-delay: 4s; }
+        .y { animation-delay: 4.5s; }
+
+        
+
+        
+
+        .to-mail {
+            background-color: rgb(24, 255, 243);
+            border: transparent;
+            width: 250px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .to-mail:hover {
+    background-color: #afafaf; /* Aqua background on hover */
+    color: #000000; /* Change text color on hover */
+    transform: scale(1.1); /* Slightly increase the size on hover */
+    transition: all 0.3s ease-in-out; /* Smooth transition for all changes */
+    cursor: pointer;
+}
+
+
+        .animated-emote {
+            font-size: 14px;
+            display: inline-block;
+        }
+
+        .bounce {
+            animation: bounce 1s infinite;
+        }
+
+        .rotate {
+            animation: rotate 2s infinite linear;
+        }
+
+        .heartbeat {
+            animation: heartbeat 1s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        }

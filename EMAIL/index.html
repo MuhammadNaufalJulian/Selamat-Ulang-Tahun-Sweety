@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <audio src="assetss/audio/Jamrud - Selamat ulang tahun.mp3" autoplay></audio>
+    <title>HappyBirthday Sweety</title>
+</head>
+<body>
+    <header>
+        <div class="div1">
+            <h3 id="to">To: Shofy Dwi Hidayanti</h3>
+
+            <h3 id="from">From: Muhammad Naufal Julian</h3>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-container">
+            <div id="main-head">
+                
+                <h2>Hallo Wanita Cantik</h2>
+                <div class="umur">
+                <p>Sebelum itu... sudah berapa sih umur kamu 
+                    <button class="trigger-btn">?</button>
+
+<div class="alert-container">
+  <div class="alert" id="alert">
+    <span class="number">9</span>
+    <span class="number1">1</span>
+    <span>th</span>
+  </div>
+</div>
+</div>
+                    Sudah dewasa nieeeeee.., aku sayang kamu selalu cantik, kamu adalah wanita yang akan aku selalu cintai :), banyak hal hebat yang sudah kamu raih,kamu lewati, itu semua berat dan ngga mudah pasti kan?, tapi kamu sudah melewati semuanya aku tersalut salut sampai gery salut aja cemberut melihat kamu yang lucu dan imut, maaf ya terkadang aku tidak mengertiin kamu dan tidak membantu.</p>
+                <p>Selamat ulang tahun ya Shofy diumur yang ke 19th ini semoga kedepannya kamu sehat selalu, diberi kesabaran, dan kemudahan dalam menjalani semua yang akan di lalui, dipanjangkan umurnya sampai nanti kita tua bersama. Semoga juga kedepanya kita berdua di berikan rezeki yang berlimpah, yang berkah, dan di ridhoi Allah agar kita berdua bisa secepatnya serumah bersamma:), aamiin...</p>
+                <p>Mamah Arida, Bapa Topik, mungkin jika tidak ada kalian, tidak akan ada yang namanya Shofy Dwi Hidayanti, wanita cantik, cerdas, baik, ramah, friendly..., nah ini yang harus di kurangin mwehe, yang soleha dan berbakti kepada orang tua. Mah..,Pa.., bolehkah Julian Memiliki dan menikahi anakmu ini, ingin rasanya cepat-cepat aku berkata seperti itu, tapi semuanya butuh persiapan, aku mohon tunggu aku yaah, jika ada yang mendahului aku tendang aja pantatnya bilang disuruh Calon kamu yaitu aku hehe. Salam Tampan : Naufal Julian 😎</p>
+                <h3>Aku punya beberapa pertanyaan buat kamu!</h3>
+            </div>
+            <div id="main-body">
+                <p>click--></p>
+                <button id="button-question" onclick="askQuestions()">KlikDulu</button>
+                <p><--click</p>
+            </div>
+        </div>
+        <view class="flower-animation">
+            <div></div>
+        </view>
+    </main>
+
+    <footer>
+        <div class="footer-div">
+            <h1 class="goyang">🎉</h1>
+            <h1 class="membesar">🥳</h1>
+            <h1 class="lompat">🎂</h1>
+            <h1 class="move-left ">Happy</h1>
+            <h1 class="move-right enlarge">Birthday</h1>
+            <h1 class="move-right">Sweety</h1>
+            <h1 class="goyang">🎁</h1>
+            <h1 class="lompat">💐</h1>
+            <h1 class="membesar">🎈</h1>
+        </div>
+    </footer>
+    
+
+<!-- Tambahkan elemen untuk prompt -->
+<div class="prompt-container" id="prompt-container" style="display: none;">
+    <h2 class="prompt-message">Kamu sayang aku ngga?</h2>
+    <div class="prompt-buttons">
+        <button id="hoverquest" onclick="submitPrompt()">Dikit</button>
+        <button class="pulse" id="sayang" onclick="askAnswer()">Iya aku sayang</button>
+    </div>
+</div>
+<div class="prompt-answer" id="prompt-answer" style="display: none;">
+    <h1 class="prompt-next1">aku juga sayang kamu!!!</h1>
+    <div class="animated-emote bounce">😊</div>
+    <div class="animated-emote rotate">😎</div>
+    <div class="animated-emote heartbeat">❤️</div>
+
+    <!-- Tombol "Next" untuk prompt berikutnya -->
+    <button id="button-next" onclick="newPrompt()"> Next >>> </button>
+</div>
+
+<!-- Elemen untuk text area di prompt selanjutnya -->
+<div class="prompt-next" id="prompt-next" style="display: none;">
+    <div class="spam-image">
+    <h2 class="prompt-message1">Terima kasih telah hadir dihidupku</h2>
+    <h3 class="prompt-message1">Aku akan selalu memujamu</h3>
+    <h1 class="prompt-message1">AKU SAYANG KAMU</h1>
+    <h1 class="prompt-message1">AKU SAYANG KAMU</h1>
+    <h1 class="prompt-message1">AKU SAYANG KAMU</h1>
+    <h1 class="prompt-message1">AKU SAYANG KAMU</h1>
+    </div>
+    <div class="prompt-buttons" id="prompt-buttons">
+        <button class="close" id="close" onclick="startDisplay()">Close</button>
+    </div>
+    
+    <div id="image-container" class="image-container" style="display: none;">
+        <img class="image1" src="assetss/imageAlert/image1.jpg" alt="Displayed Image 1">
+        <img class="image2" src="assetss/imageAlert/image2.jpg" alt="Displayed Image 2">
+        <img class="image3" src="assetss/imageAlert/image2.jpg" alt="Displayed Image 3">
+        <img class="image4" src="assetss/imageAlert/image4.jpg" alt="Displayed Image 4">
+        <img class="image5" src="assetss/imageAlert/image5.jpg" alt="Displayed Image 5">
+        <img class="image6" src="assetss/imageAlert/image6.jpg" alt="Displayed Image 6">
+        <img class="image7" src="assetss/imageAlert/image7.jpg" alt="Displayed Image 7">
+        <img class="image8" src="assetss/imageAlert/image8.jpg" alt="Displayed Image 8">
+        <img class="image9" src="assetss/imageAlert//image9.png" alt="Displayed Image 9">
+        <img class="image10" src="assetss/imageAlert//image10.jpg" alt="Displayed Image 10">
+    </div>
+    <script src="index.js"></script>
+    
+</body>
+</html>

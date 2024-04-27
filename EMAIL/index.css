@@ -1,0 +1,668 @@
+/* CSS */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Menghilangkan scroll */
+    height: 100vh; /* Mengisi tinggi layar */
+    display: flex;
+    flex-direction: column;
+    background-color: #999898d5;
+    opacity: 0; /* Set opacity to 0 untuk menyembunyikan elemen saat dimuat */
+    transition: opacity 10s ease-in; /* Animasi muncul dengan transition opacity */
+}
+
+
+/* Tambahkan class loaded untuk menampilkan elemen */
+body.loaded {
+    opacity: 1;
+    background-size: cover;
+    background-position: center;
+}
+
+/* STYLE BAGIAN HEADER */
+
+
+/* STYLE BAGIAN HEADER */
+header {
+    background-color: rgb(141, 140, 140);
+    padding: 1vh;
+}
+
+.div1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh;
+}
+
+.kembali {
+    background-color: rgb(163, 65, 0);
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.5s, transform 0.3s; /* Menambahkan efek transisi untuk transform */
+}
+
+.kembali:hover {
+    background-color: #676867c2;
+    transform: scale(1.5); /* Tombol membesar ketika dihover */
+
+  }
+
+#to, #from {
+    margin: 0; /* Menghilangkan margin bawaan */
+}
+/* STYLE HEADER END */
+
+/* STYLE MAIN */
+
+/* styles.css */
+
+
+  @keyframes shake {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(10deg);
+    }
+  }
+  
+
+main {
+    flex: 1; /* Mengisi sisa ruang yang tersedia */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1vh 13vh 1vh;
+    background-color:transparent rgb(163, 65, 0);
+    color: black;
+    border-radius: 50vh;
+    margin: 1vh;
+}
+
+main:hover {
+  background-color: rgba(0, 0, 0, 0.637);
+  color: grey;
+}
+
+/* CSS (styles.css) */
+
+
+
+
+.main-container {
+    max-width: 1100px; /* Menambahkan lebar maksimum agar konten tetap rapi */
+}
+
+
+.main-head {
+    display: flex;
+
+}
+
+#main-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    background-image: url('EMAIL/assetss/imgBackgground/flowerview.png');
+    border-radius: 40px;
+    box-shadow: -3px 4px 13px 9px rgba(0,0,0,0.3);
+-webkit-box-shadow: -3px 4px 13px 9px rgba(0,0,0,0.3);
+-moz-box-shadow: -3px 4px 13px 9px rgba(0,0,0,0.3);
+}
+
+#main-body p {
+    margin: 0; /* Menghilangkan margin bawaan */
+}
+.trigger-btn {
+  
+  background-color: rgb(68, 68, 68);
+  color: white;
+  border-radius: 5px;
+  
+  cursor: pointer;
+  transition:background-color 0.1s, transform 0.5s;
+}
+
+.trigger-btn:hover {
+  background-color: rgb(163, 65, 0);
+}
+
+.umur {
+  display: flex;
+  
+}
+
+.alert-container {
+  width: 70px;
+  height: 30px;
+}
+
+.alert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(68, 68, 68);
+  box-shadow: -3px 4px 13px 9px rgba(0,0,0,0.3);
+-webkit-box-shadow: -3px 4px 13px 9px rgba(0,0,0,0.3);
+-moz-box-shadow: -3px 4px 13px 9px rgba(0,0,0,0.3);
+  color: rgb(163, 65, 0);
+  width: 100%;
+  height: 100%;
+  border: 1px solid #000;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.number {
+  font-size: 24px;
+  transition: transform 0.5s ease;
+  
+}
+
+.number1 {
+  font-size: 24px;
+  transition: transform 0.5s ease;
+}
+
+
+.number:first-child {
+  margin-right: 1px;
+}
+
+
+.alert.hover .number:first-child {
+  transform: translateX(100%);
+}
+
+.alert.hover .number1 {
+  transform: translateX(-100%);
+}
+
+
+#button-question{
+    margin: 10px;
+    width: 70px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: rgb(235, 235, 235);
+}
+
+#button-question {
+    background-color: #676867c2;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.1s, transform 1.3s; /* Menambahkan efek transisi untuk transform */
+}
+
+#button-question:hover {
+    background-color: #252222;
+    font-size: 1px ;
+    transform: scale(100.1); /* Tombol membesar ketika dihover */
+}
+
+
+
+.view {
+    flex: 1; /* Mengisi sisa ruang yang tersedia */
+}
+/* STYLE MAIN END */
+
+/* STYLE FOOTER */
+.footer-div {
+    background-color: rgb(141, 140, 140);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px; /* Menambahkan padding agar konten terlihat lebih baik */
+    border-radius: 40px;
+}
+
+
+
+.footer-div h1 {
+  color: rgb(163, 65, 0);
+    margin: 0; /* Menghilangkan margin bawaan */
+}
+
+/* styles.css */
+
+.move-left {
+    animation: slide-left 1s infinite alternate;
+  }
+  
+  .move-right {
+    animation: slide-right 1s infinite alternate;
+  }
+  
+  .enlarge {
+    animation: enlarge 1s infinite alternate;
+  }
+
+  
+.goyang {
+    animation: shake 0.5s infinite alternate;
+  }
+  
+  .membesar {
+    animation: enlarge 1s infinite alternate;
+  }
+  
+  .lompat {
+    animation: jump 0.5s infinite alternate;
+  }
+  
+  @keyframes shake {
+    0% {
+      transform: translateX(-5px);
+    }
+    100% {
+      transform: translateX(5px);
+    }
+  }
+  
+  @keyframes enlarge {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.1);
+    }
+  }
+  
+  @keyframes jump {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slide-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-30px);
+    }
+  }
+  
+  @keyframes slide-right {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(30px);
+    }
+  }
+  
+  @keyframes enlarge {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.5);
+    }
+  }
+  
+
+
+/* STYLE FOOTER END */
+
+/* STYLE PROMPT */
+.prompt-container{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url('assetss/imgBackgground/Screenshot_2023-03-31-23-15-29-912_com.instagram.android.jpg');
+    background-position: center ;
+    background-size: contain;
+    border: 10px solid #111010;
+    padding: 30px;
+    z-index: 9999; /* Menentukan tumpukan z agar prompt selalu muncul di atas elemen lain */
+    display: none; /* Agar prompt tidak tampil secara default */
+    border-radius: 20px;
+}
+
+
+
+
+.prompt-answer{
+  width: 60%;
+  height: 60%;
+  font-size: 30px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url('assetss/imgBackgground/IMG-20230728-WA0013.jpg');
+    background-position: center ;
+    background-size: contain;
+    border: 10px solid #111010;
+    padding: 30px;
+    z-index: 9999; /* Menentukan tumpukan z agar prompt selalu muncul di atas elemen lain */
+    display: none; /* Agar prompt tidak tampil secara default */
+    border-radius: 20px;
+}
+
+
+.prompt-message {
+    margin-bottom: 10px;
+    color: rgb(0, 0, 0);
+    background-color: rgba(0, 255, 255, 0.432);
+    border-radius: 10px;
+}
+
+.prompt-message1 {
+  margin-bottom: 10px;
+  color: yellow;
+  background-color: rgba(0, 255, 255, 0.432);
+  border-radius: 10px;
+}
+
+.prompt-next1 {
+    margin-bottom: 10px;
+    color: rgb(0, 0, 0);
+    background-color: rgba(0, 255, 255, 0.432);
+    border-radius: 10px;
+}
+
+.prompt-next {
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  height: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url('assetss/imgBackgground/IMG-20230728-WA0013.jpg');
+  background-position: center ;
+  background-size: contain;
+  border: 10px solid #111010;
+  padding: 30px;
+  z-index: 9999; /* Menentukan tumpukan z agar prompt selalu muncul di atas elemen lain */
+  display: none; /* Agar prompt tidak tampil secara default */
+  border-radius: 20px;
+
+}
+
+.prompt-buttons {
+    text-align: center;
+}
+
+.prompt-buttons button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
+
+
+#sayang{
+    border-radius:20px ;
+    background-color: #007bff;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); } /* Mulai dengan ukuran normal */
+    50% { transform: scale(1.2); } /* Puncak denyut, membesar hingga 1.2 kali ukuran normal */
+    100% { transform: scale(1); } /* Kembali ke ukuran normal */
+}
+
+.pulse {
+    animation: pulse 1s infinite; /* Gunakan animasi pulse dengan durasi 1 detik */
+}
+
+
+#hoverquest {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: transform 10s; /* Transisi ketika ada perubahan pada transformasi */
+}
+
+#hoverquest:hover {
+    transform: translate(1000px, 10px); /* Memindahkan tombol 10px ke kanan dan 10px ke bawah saat dihover */
+}
+
+/* Atur efek animasi ketika tombol diklik */
+#hoverquest:active {
+    transform: translate(150px, 60000px); /* Memindahkan tombol lebih jauh saat diklik */
+}
+
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.animated-emote {
+    font-size: 8rem;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.bounce {
+    animation: bounce 1s infinite;
+}
+
+.rotate {
+    animation: rotate 2s infinite linear;
+}
+
+.heartbeat {
+    animation: heartbeat 1s infinite;
+}
+
+#button-next {
+  width: 10rem;
+  height: 8rem;
+  font-size: 30;
+  border-radius: 20px;
+  margin-left: 30px;
+  cursor: pointer;
+  background-color: rgba(0, 255, 255, 0.432);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+#button-next:hover {
+  background-color: aqua;
+  transform:scale(1.5);
+}
+
+.close {
+  width: 50px;
+  height: 30px;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: rgba(0, 255, 255, 0.432);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.close:hover {
+  background-color: aqua;
+  transform:scale(2);
+}
+
+/* STYLE PROMPT END */
+
+
+
+
+.image-container{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-position: center ;
+  background-size: contain;
+  border: transparent;
+  z-index: 9999; /* Menentukan tumpukan z agar prompt selalu muncul di atas elemen lain */
+}
+
+.image1 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 40%;
+  height: 70%;
+  transform: translate(-50%, -50%);
+  background-position: center;
+  background-size: contain;
+  border: transparent;
+  padding: 30px;
+  z-index: 9999;
+}
+
+.image2 {
+  position: fixed;
+  top: 70%;
+  left: 60%;
+  width: 40%;
+  height: 70%;
+  transform: translate(-50%, -50%);
+  background-position: center;
+  background-size: contain;
+  border: transparent;
+  padding: 30px;
+  z-index: 9999;
+}
+
+.image3 {
+  position: fixed;
+  top: 50%;
+  left: 30%;
+  width: 70%;
+  height: 70%;
+  transform: translate(-50%, -50%);
+  background-position: center;
+  background-size: contain;
+  border: transparent;
+  padding: 30px;
+  z-index: 9999;
+}
+
+.image4 {
+  position: fixed;
+  top: 10%;
+  left: 20%;
+  width: 40%;
+  height: 70%;
+  transform: translate(-50%, -50%);
+  background-position: center;
+  background-size: contain;
+  border: transparent;
+  padding: 30px;
+  z-index: 9999;
+}
+
+.image5 {
+  position: fixed;
+  top: 90%;
+  left: 30%;
+  width: 40%;
+  height: 90%;
+  transform: translate(-50%, -50%);
+  background-position: center;
+  background-size: contain;
+  border: transparent;
+  padding: 30px;
+  z-index: 9999;
+}
+
+.image6 {
+  position: fixed;
+  top: 50%;
+  left: 80%;
+  width: 40%;
+  height: 70%;
+  transform: translate(-50%, -50%);
+  background-position: center;
+  background-size: contain;
+  border: transparent;
+  padding: 30px;
+  z-index: 9999;
+}
+
+.image7 { 
+  position: fixed;
+  top: 35%;
+  left: 60%;
+  width: 40%;
+  height: 90%;
+  transform: translate(-50%, -50%);
+  background-position: center;
+  background-size: contain;
+  border: transparent;
+  padding: 30px;
+  z-index: 9999;
+}
+
+.image8 {
+  position: fixed;
+  top: 80%;
+  left: 20%;
+  width: 60%;
+  height: 50%;
+  transform: translate(-50%, -50%);
+  background-position: center;
+  background-size: contain;
+  border: transparent;
+  padding: 30px;
+  z-index: 9999;
+}
+
+.image9 {
+  position: fixed;
+  top: 70%;
+  left: 70%;
+  width: 30%;
+  height: 50%;
+  transform: translate(-50%, -50%);
+  background-position: center;
+  background-size: contain;
+  border: transparent;
+  padding: 30px;
+  z-index: 9999;
+}
+
+.image10 {
+  position: fixed;
+  top: 30%;
+  left: 30%;
+  width: 40%;
+  height: 60%;
+  transform: translate(-50%, -50%);
+  background-position: center;
+  background-size: contain;
+  border: transparent;
+  padding: 30px;
+  z-index: 9999;
+}
